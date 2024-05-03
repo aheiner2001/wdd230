@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: solid gray 1px;
+    padding: 2rem;
+    background-color: azure;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section{
+    padding: 2rem;
+    background-color: white;
+}
+
+/* Questions? 
+
+I do not know how to set the main element grid to only one column with an even gap of 1rem."
+*/

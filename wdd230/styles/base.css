@@ -38,11 +38,13 @@ header h1 {
     padding-left: 10px;
 }
 
+/* Add flexbox properties for navigation */
 nav {
     background-color: #F4E8C1;
     width: 100%;
-    align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
 }
 
 nav a {
@@ -52,11 +54,21 @@ nav a {
     color: black;
     background-color: #F4E8C1;
     font-family: "Jersey 20", sans-serif;
+    flex: 1; /* Each link takes equal space */
 }
 
 nav a:hover {
     background-color: #CD8987;
 }
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Display links vertically */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
 
 a:visited {
     color: black;
