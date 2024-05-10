@@ -79,7 +79,13 @@ nav a:hover {
 
     nav.open {
         display: block; /* Display the nav when .open class is added */
+        
     }
+
+    #menu.open::before{
+        content: "❌";
+    }
+   
 
     #menu::before {
         content: "☰";
@@ -92,6 +98,7 @@ nav a:hover {
 		display: none; /* hide hamburger button */
 	}
 }
+
 
 a:visited {
     color: black;
@@ -107,7 +114,7 @@ header img {
 
 main {
     text-align: center;
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -137,7 +144,7 @@ footer {
     height: 10vh;
     background-color: #102542;
     left: 0%;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     color: white;
     text-align: center;
@@ -162,4 +169,18 @@ footer {
 #learning-activities li a::before {
     content: counter(activity-counter) ". ";
     counter-increment: activity-counter;
+}
+nav a.active::before {
+    content: "●";
+    margin-right: 5px;
+}
+
+#map.closed{
+    display:none
+}
+iframe{
+    width: 100%;
+   aspect-ratio: 1/1;
+   
+   margin: auto 0;
 }
