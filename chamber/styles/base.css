@@ -1,0 +1,36 @@
+/* Use a common or customized normalize or reset CSS as the first item in your CSS cascade.DONE
+
+Using the base.css file, begin providing baseline styling for your project using your color schemas and the wireframe as a guide to match the design identity and general layout.
+Do not worry if you feel like you need to make changes from your original plan. This is a normal part of the design process. You will be able to make changes as you go along.
+The main navigation menu must support the pages listed in the chamber project description and be responsive, using a responsive, 'hamburger menu'. This means that in the mobile view they are exposed with a click of the hamburger button and that in the large view they are displayed horizontally.
+The main content are pieces must show some difference between the mobile and larger views in terms of layout. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#EDF6F9;
+    --text-color:#2D2A45;
+    --header-background: #00464D;
+    --header-textcolor:white;
+    
+
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: var(--header-background);
+    color: var(--header-textcolor);
+    text-align: center;
+    align-content: center;
+}
+

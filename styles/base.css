@@ -79,6 +79,9 @@ nav a:hover {
 a:visited {
     color: black;
 }
+a{
+    color: black;
+}
 
 h2 {
     text-align: center;
