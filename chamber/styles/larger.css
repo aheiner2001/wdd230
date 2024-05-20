@@ -1,0 +1,255 @@
+/* Use a common or customized normalize or reset CSS as the first item in your CSS cascade.DONE
+
+Using the base.css file, begin providing baseline styling for your project using your color schemas and the wireframe as a guide to match the design identity and general layout.
+Do not worry if you feel like you need to make changes from your original plan. This is a normal part of the design process. You will be able to make changes as you go along.
+The main navigation menu must support the pages listed in the chamber project description and be responsive, using a responsive, 'hamburger menu'. This means that in the mobile view they are exposed with a click of the hamburger button and that in the large view they are displayed horizontally.
+The main content are pieces must show some difference between the mobile and larger views in terms of layout. */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.mate-sc-regular {
+    font-family: "Mate SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-regular {
+     
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#EDF6F9;
+    --text-color:#2D2A45;
+    --header-background: #00464D;
+    --header-textcolor:white;
+    --footer-backcolor:#D3D0CB ;
+    --footer-color: black;
+
+    --height-of-footer:10vh;
+    
+
+}
+.maincardcontainer{
+    
+    width: 95%;
+    
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: .65fr .35fr;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.card{
+ background-color:#E9E9E9;
+ padding: 2rem;
+ text-align: left;
+ width: 100%;
+ border: .25rem #b7b7b7 solid;
+ border-radius: 15px;
+ 
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10rem;
+
+
+
+}
+.current-page {
+    border-bottom: 5px solid #F06543; 
+    background-color:  #c1bebef3;
+    /* This creates a line above the link */
+  }
+
+nav{
+    width: 100%;
+    min-height: 3rem;
+    background-color:#E9E9E9 ;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #2D2A45;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-size: larger;
+    font-weight:bolder;
+    align-content: center;
+ 
+
+}
+
+a{
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    
+}
+a:hover{
+ background-color: #c1bebef3;
+}
+
+
+nav a:visited{
+    color: black;
+    text-decoration: none;
+
+}
+
+.headertopborder{
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(to right, #8DDBFF, #1D96E8);
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: var(--header-background);
+    color: var(--header-textcolor);
+    text-align: center;
+    align-content: center;
+    border-bottom: #022B3A solid 1rem;
+    border-top: #022B3A solid 1rem;
+    font-family: "Mate SC", serif;
+
+    
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    padding-bottom: var(--height-of-footer);
+    
+}
+header img{
+ width: 100px;
+}
+
+/* Add to your existing CSS */
+.hero {
+    width: 100%;
+     /* Center align the content */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    
+  }
+  
+  .hero img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%; /* This ensures the image is as wide as the grid column */
+    height: auto; /* This maintains the aspect ratio of the image */
+    object-fit: cover; /* This makes sure the image covers the area without stretching */
+  }
+.herocard{
+    width: 75%;
+    grid-column: 1/2;
+  grid-row: 1/2;
+     z-index: 1;
+     height: 100px;
+     background-color: var(--header-background);
+     color: white;
+     margin: 0 auto;
+     height: 85%;
+     text-align: center;
+     align-items: center;
+     align-content: center;
+     border-radius: 1rem;
+}
+
+  .calltoaction {
+    grid-column: 2/3;
+   grid-row: 1/2;
+    z-index: 1;
+  
+  }
+
+  
+  
+  .calltoaction button {
+    
+    padding: 30px 50px;
+    background-color: #F06543;
+    color: white;
+    border: solid #d3d3d3dc .5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    /* Add any additional styling you want for the button */
+  }
+  
+    
+  .calltoaction button:hover {
+    
+    padding: 30px 50px;
+    background-color: #f96641;
+    color: white;
+    border: solid #d3d3d3bd .5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    /* Add any additional styling you want for the button */
+  }
+  
+  section{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .25em;
+    padding: 2rem;
+    margin-top: 2rem;
+   
+  }
+  section .card{
+    height: 10rem;
+  }
+  
+  footer{
+    border-bottom: var(--header-background) 1.5rem solid;
+    background-color: #E9E9E9;
+    width: 100%;
+    position: absolute;
+    height: 15vh;
+    left: 0%;
+    bottom: 0%;
+    color: var(--footer-color);
+    text-align: center;
+    align-content: center;
+    font-family: "Roboto", sans-serif;
+ 
+  }
+  .event{
+    display: inline-block;
+    width: 100%;
+}
