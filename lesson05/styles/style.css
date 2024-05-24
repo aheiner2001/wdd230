@@ -79,6 +79,7 @@ body {
   
   li button {
     border-radius: .35rem;
+    background-color: white;
   }
   
   main {
