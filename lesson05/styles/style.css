@@ -58,12 +58,41 @@ li {
 	justify-content: space-between;
 }
 
-@media only screen and (min-width: 32.5em) {
-	h1 {
-		font-size: 2rem;
-	}
 
-	main {
-		width: 320px;
-	}
-}
+  
+body {
+    background-color: #DD9787;
+  }
+  
+  input, button {
+    border-radius: 3rem;
+  }
+  
+  input#favchap {
+    border-radius: .75rem;
+  }
+  
+  button {
+    background-color: #27233A;
+    color: white;
+  }
+  
+  li button {
+    border-radius: .35rem;
+  }
+  
+  main {
+    border-radius: .75rem;
+    background-color: white;
+  }
+  
+  @media only screen and (min-width: 32.5em) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    main {
+      width: 320px;
+    }
+  }
+  
