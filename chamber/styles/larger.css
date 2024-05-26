@@ -355,6 +355,7 @@ input:checked + .slider:before {
 }
 .logotitle{
   grid-column:  2/3;
+  
 }
 
 .leftbox{
