@@ -29,6 +29,7 @@ The main content are pieces must show some difference between the mobile and lar
 #menu{
     display: none;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -68,6 +69,7 @@ The main content are pieces must show some difference between the mobile and lar
  border-radius: 15px;
  
 }
+
 
 body{
     width: 100%;
@@ -139,6 +141,8 @@ header{
     border-bottom: #022B3A solid 1rem;
     border-top: #022B3A solid 1rem;
     font-family: "Mate SC", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     
 }
@@ -253,3 +257,112 @@ header img{
     display: inline-block;
     width: 100%;
 }
+
+
+
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  right: 1rem;
+  top: 1rem;
+ 
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+
+/* Hide default HTML checkbox */
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.dark-mode {
+	background-color: #000;
+	color: #fff;
+	border-color: #eee; 
+}
+.dark-mode nav a {
+  color: white; /* This will change the color of your navigation links to white */
+}
+.dark-mode a:hover{
+  background-color: #ffffff;
+  color: #000;
+}
+.logotitle{
+  grid-column:  2/3;
+}
+
+.leftbox{
+  text-align: right;
+grid-column: 3/4;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+
