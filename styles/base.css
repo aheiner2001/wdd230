@@ -250,3 +250,6 @@ background-color: #102542;
 .four{
     background-color: #F4E8C1;
 }
+#learning-activities ul li{
+    list-style: none;
+}

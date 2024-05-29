@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write to File</title>
+</head>
+<body>
+    <button id="save-button">Save to File</button>
+
+    <script>
+        document.getElementById('save-button').addEventListener('click', () => {
+            const content = 'Hello, world!';
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'example.txt';
+            link.click();
+        });
+    </script>
+</body>
+</html>
