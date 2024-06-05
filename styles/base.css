@@ -270,6 +270,7 @@ background-color: #102542;
     width: 100%;
   }
 
+
   .label {
 	position: absolute;
 	top: 30px;
@@ -279,5 +280,5 @@ background-color: #102542;
 	padding: 1.5rem;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
-	/* Buenas */
+	
 }

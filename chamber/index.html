@@ -16,6 +16,30 @@
     <link rel="stylesheet" href="styles/base.css">
     
     <title>Chamber Site</title>
+
+
+
+    <!-- TODO
+    
+    
+  
+
+Optimize all the images you are using on the page
+
+
+
+
+Label each image with a text overlay using the words "small", "medium", and "large", respectively, so that they are easily recognized when testing the page in the different viewports.
+
+Use the srcset to provide three different versions of the optimized image to be used in the small, medium, and large views.
+
+Convert your logo image, wherever it is used, to the Google WebP image file format.
+
+Add a wind chill value to the weather section on the home page. This means you have to have a current temperature and windspeed indicator in the weather section as well. The wind chill factor is a computed value using the current temperature and wind speed which values you will extract from the page using JavaScript. Create a "windchill.js" file and add it to your "scripts" folder. The "windchill.js" script should
+get the two input values of temperature and wind speed,
+
+check to make sure they meet the specification limits (<=50°F and >3.0mph) allowed to officially calculate the wind chill, and
+either calculate and display the wind chill factor value or display "N/A" (not applicable) if the input values did not meet the requirements.-->
 </head>
 <body>
     <div class="headertopborder">
@@ -63,12 +87,24 @@
             <div class="herocard">
                 <h1>image slider placeholder</h1>
             </div>
+            
            
-            <img class="hero-image" src="https://www.cityofnampa.us/ImageRepository/Document?documentID=16062" alt="">
+            <!-- <img class="hero-image" src="https://www.cityofnampa.us/ImageRepository/Document?documentID=16062" alt=""> -->
            
+            <picture>
+               
+                <source media="(max-width: 480px)" srcset="images/small.webp" data-text="small">
+
+                <source media="(max-width: 768px) and (max-width: 768px)" srcset="images/medium.webp">
+                <source media="(max-width: 1601px)" srcset="images/wdd230-org_optimized.webp">
+    
+                <img class="hero-image" src="images/wdd230-org_optimized.webp" alt="Hero Image">
+            </picture>
+            
 
             
         </div>
+        
         <div class="maincardcontainer">
 
             <div class="card">
