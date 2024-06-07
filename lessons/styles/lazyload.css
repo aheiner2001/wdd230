@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    flex-direction: column;  /* Arrange images in a column */
+    align-items: center;  
+}
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+
+    
+}
+
+img{
+    background: black;
+    animation: fade 10s;
+}
+
+@keyframes fade{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
