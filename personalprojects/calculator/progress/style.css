@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.checkboxcontainer{
+    width: 50%;
+    height: 80vh;
+    border: solid black;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+}
+.block{
+    width: 100%;
+    background-color: white;
+    border: solid ;
+    text-align: center;
+   align-content: center;
+   font-weight: 1000;
+   font-size: larger;
+  
+   
+}
+button{
+    padding:1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 900;
+    background-color: salmon;
+    color: black;
+}
+button:hover{
+    background-color: rgb(243, 138, 126);
+    
+}
+button:active{
+    background-color: rgb(220, 88, 74);
+}
