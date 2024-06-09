@@ -394,7 +394,7 @@ picture{
   display: grid;
   grid-template-columns: 1.5fr 3fr;
  position: relative;
- 
+ margin-bottom: 2rem;
 }
 .sidebar{
   border-right: solid #b9b5b5;
@@ -438,12 +438,12 @@ picture{
 .maincontent{
 
   width: 100%;
- height: fit-content;
+ min-height: 90vh;
  padding-left: 1rem;
 
  display: grid;
  grid-template-columns: 1fr;
- gap: 1rem;
+
  
  
 }
@@ -451,4 +451,8 @@ picture{
   width: 600px;
   height: 400px;
 margin: 0 auto;
+}
+.maincontent h4{
+margin-bottom: 1.5rem;
+color: #4c4c4c;
 }
