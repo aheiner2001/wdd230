@@ -33,7 +33,7 @@ function displayList(item ){
         list.append(li);
         deleteButton.addEventListener("click", ()=> {
                 list.removeChild(li);
-                deleteChapter(li.textContent);
+                deleteChapter(item);
                 input.focus();
         })
         input.focus();
