@@ -282,3 +282,7 @@ background-color: #102542;
 	opacity: 0.75;
 	
 }
+
+.inline{
+    display: inline;
+}
