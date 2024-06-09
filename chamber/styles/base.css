@@ -2,6 +2,12 @@
 
 @media only screen and (max-width: 769px){
   
+
+
+   
+
+
+
     section{
         grid-template-columns: 1fr;
     }
@@ -76,7 +82,32 @@ footer{
     align-items: center;
     align-content: center;
 }
+.content{
+
+    width: 95%;
     
+    min-height:80vh ;
+   
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+   
+  }
+  .sidebar{
+   padding-right: 0;
+  
+   
+  }
+  
+  
+  .maincontent img{
+    width: 300px;
+    height: 200px;
+  
+  margin: 0 auto;
+  }
 }
 .open a{
     display: block;

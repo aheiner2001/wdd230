@@ -51,3 +51,38 @@ modeButton.addEventListener("click", () => {
 
 });
 
+
+
+
+const visitsDisplay = document.querySelector(".lasttime");
+
+
+let lastVisit = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+let lastVisitDate = window.localStorage.getItem("lastVisitDate-ls");
+
+
+if (lastVisit !== 0) {
+    
+    let today = new Date();
+    let previousVisitDate = new Date(lastVisitDate);
+    let timeDiff = today - previousVisitDate;
+    let daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+    if (daysDiff < 1) {
+        visitsDisplay.textContent = "Back so soon! Awesome!";
+    } else {
+        let dayWord = daysDiff === 1 ? "day" : "days";
+        visitsDisplay.textContent = `You last visited ${daysDiff} ${dayWord} ago.`;
+    }
+} else {
+    visitsDisplay.textContent = "Welcome! Let us know if you have any questions.";
+}
+
+
+lastVisit++;
+
+
+localStorage.setItem("numVisits-ls", lastVisit);
+localStorage.setItem("lastVisitDate-ls", new Date().toISOString());
+

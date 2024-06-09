@@ -80,11 +80,14 @@ body{
 main{
     width: 100%;
     text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
 
 
 
 }
+
+
 .current-page {
     border-bottom: 5px solid #F06543; 
     background-color:  #c1bebef3;
@@ -377,4 +380,75 @@ picture{
   width: 100%; /* This ensures the image is as wide as the grid column */
   height: auto; /* This maintains the aspect ratio of the image */
   object-fit: cover; 
+}
+
+
+.content{
+
+  width: 95%;
+  
+  min-height:80vh ;
+ 
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+ position: relative;
+ 
+}
+.sidebar{
+  border-right: solid #b9b5b5;
+  width: 100%;
+ height: fit-content;
+ padding-right: 1rem;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 1rem;
+
+ 
+}
+.sidebar iframe{
+  min-height: 400px;
+  width: 100%;
+}
+.box{
+  width: 100%;
+
+  height: fit-content;
+  background-color: #2196F3;
+  min-height: 200px;
+  border:#b9b5b5 solid;
+  /* background-color:#E9E9E9; */
+  background-color: var(--background-color);
+  text-align: center;
+  align-content: center;
+
+  
+}
+.box hr{
+  width: 90%;
+  margin: 0 auto;
+  margin: 1rem;
+}
+.box h4{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.maincontent{
+
+  width: 100%;
+ height: fit-content;
+ padding-left: 1rem;
+
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 1rem;
+ 
+ 
+}
+.maincontent img{
+  width: 600px;
+  height: 400px;
+margin: 0 auto;
 }
