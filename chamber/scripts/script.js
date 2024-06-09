@@ -67,7 +67,9 @@ if (lastVisit !== 0) {
     let today = new Date();
     let previousVisitDate = new Date(lastVisitDate);
     let timeDiff = today - previousVisitDate;
-    let daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    console.log(timeDiff)
+    let daysDiff = Math.round(timeDiff / (1000 * 60 * 60 * 24));
+    
 
     if (daysDiff < 1) {
         visitsDisplay.textContent = "Back so soon! Awesome!";
