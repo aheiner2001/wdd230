@@ -50,3 +50,10 @@ button:hover{
 button:active{
     background-color: rgb(220, 88, 74);
 }
+
+@media only screen and (max-width: 769px){
+.checkboxcontainer{
+    width: 100%;
+    height: 60vh;
+}
+}
