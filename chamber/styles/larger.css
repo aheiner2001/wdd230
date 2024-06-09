@@ -452,7 +452,11 @@ picture{
   height: 400px;
 margin: 0 auto;
 }
+.maincontent img:hover{
+opacity: 80%;
+}
 .maincontent h4{
 margin-bottom: 1.5rem;
 color: #4c4c4c;
 }
+
