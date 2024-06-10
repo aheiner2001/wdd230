@@ -11,7 +11,7 @@ body{
 }
 
 .checkboxcontainer{
-    width: 50%;
+    width: 85%;
     height: 80vh;
     border: solid black;
     margin: 0 auto;
@@ -19,6 +19,8 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    grid-column: 2/3;
+    grid-row: 3/4;
 
 }
 .block{
@@ -35,6 +37,8 @@ body{
 button{
     padding:1rem;
     margin: 1rem;
+    width: 10rem;
+    height:3rem;
     border-radius: 1rem;
     border: none;
     font-family: 'Courier New', Courier, monospace;
@@ -42,6 +46,13 @@ button{
     font-weight: 900;
     background-color: salmon;
     color: black;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 0 auto;
+  align-content: center;
+  align-items: center;
+
+    
 }
 button:hover{
     background-color: rgb(243, 138, 126);
@@ -51,9 +62,97 @@ button:active{
     background-color: rgb(220, 88, 74);
 }
 
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+ 
+}
+h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.title{
+    grid-column: 2/3;
+   
+}
+.bank{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    min-height: 10rem;
+    border: black solid;
+
+
+}
+.bank ul{
+    width: 100%;
+    height: auto;
+   
+    list-style: none;
+ 
+}
+li{
+
+    padding: 2rem 0 2rem;
+    font-size: 50px;
+}
+.store{
+    grid-column: 3/4;
+}
+
+.list{
+width:100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+input{
+    width: 50px;
+   margin: 0 auto;
+   grid-row: 1/2;
+}
+input:hover{
+    opacity: 70%;
+}
+input:active{
+    opacity: 100%;
+}
+
 @media only screen and (max-width: 769px){
 .checkboxcontainer{
     width: 100%;
     height: 60vh;
 }
+body{
+    grid-template-columns: 1fr;
+}
+
+button {
+    grid-column: 1/2;
+    display: inline-block;
+}
+.checkboxcontainer {
+    grid-column: 1/2;
+}
+
+.title{
+    grid-column
+     : 1/2;
+}
+.bank{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.store{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.reset{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+   
+
 }
