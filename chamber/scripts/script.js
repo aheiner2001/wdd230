@@ -88,3 +88,8 @@ lastVisit++;
 localStorage.setItem("numVisits-ls", lastVisit);
 localStorage.setItem("lastVisitDate-ls", new Date().toISOString());
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    var timestampField = document.getElementById("timestamp");
+    timestampField.value = Date.now();
+  });
