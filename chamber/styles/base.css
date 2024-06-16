@@ -4,7 +4,9 @@
   
 
 
-   
+   .membership{
+    display: none;
+   }
 
 
 
@@ -143,6 +145,7 @@ label{
 }
 form{
     text-align: left;
+   
     
 }
 .joinform input:required{

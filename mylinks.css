@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.ideacards{
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    border: solid rgb(28, 28, 83);
+    border-radius: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+  
+    
+}
+.ideacards h1{
+   background-color: rgb(19, 55, 132);
+   border-radius: 6px 6px 0 0 ;
+   color: white;
+   padding: .5rem;
+}
+
+.ideacards div{
+    font-size: 20px;
+   
+}
+
+main{
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
