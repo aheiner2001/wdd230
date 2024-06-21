@@ -84,3 +84,34 @@ function playMusic() {
         }
     }
 }
+
+const checkbox = document.getElementById('logCheckbox');
+const streakDisplay = document.getElementById('streak');
+let lastLoggedDate = localStorage.getItem('lastLoggedDate');
+let streak = parseInt(localStorage.getItem('streak'), 10) || 0;
+
+function updateStreak(today) {
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+
+  if (lastLoggedDate === yesterday.toISOString().split('T')[0]) {
+    streak++;
+  } else if (lastLoggedDate !== today.toISOString().split('T')[0]) {
+    streak = 1; // Reset streak if not consecutive
+  }
+  localStorage.setItem('streak', streak);
+  localStorage.setItem('lastLoggedDate', today.toISOString().split('T')[0]);
+  streakDisplay.textContent = 'Consecutive days: ' + streak;
+}
+
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    const today = new Date();
+    updateStreak(today);
+  }
+});
+
+// Display the current streak on load
+window.onload = function() {
+  streakDisplay.textContent = 'Consecutive days: ' + streak;
+};

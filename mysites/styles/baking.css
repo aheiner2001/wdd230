@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ body{
     min-height: 100vh;
     text-align: center;
     padding: 0 2rem 0;
-    font-family: cursive;
+    font-family: fantasy;
     background-color: #FEFEFE;
 
     
@@ -20,11 +25,14 @@ h1{
 }
 .imagescreen{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
 }
 .imagescreen h1{
-    grid-row: 2/3;
+    
+    grid-row: 3/4;
     grid-column: 1/3;
+   
 }
 img{
     width: 100%;
@@ -32,7 +40,7 @@ img{
    /* height: 200px;
     object-fit: cover;
     object-position: top;  */
-    grid-row: 1/3;
+    grid-row: 1/4;
     grid-column: 1/3;
 }
 h4{
@@ -43,13 +51,13 @@ h4{
  
 }
 .list{
-width: 50%;
+width: 75%;
 min-height: 200px;
 margin: 0 auto;
 margin-top: 40px;
 margin-bottom: 40px;
-border: solid 5px rgb(41, 64, 109);
-background-color: rgb(226, 231, 242);
+border: solid 5px #4C5B62;
+background-color: #FEFDFB;
 padding: 1rem;
 border-radius: 1rem;
 
@@ -66,16 +74,17 @@ border-radius: 1rem;
     padding: .7rem;
     margin: .5rem;
     width: 15%;
+    border: #414141 solid;
 }
 .price{
     width: 100px;
     height: 50px;
     margin: 0 auto;
-    border: rgb(47, 149, 100) solid 4px;
-    background-color: rgb(188, 222, 199);
+    border: #515451 solid 4px;
+    background-color: #D7DFD8;
     align-items: center;
     display: flex;
     justify-content: center;
-    color: #414141;
+    color: black;
     font-size: 20px;
 }

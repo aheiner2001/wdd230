@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consecutive Days Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  #streak {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1>Consecutive Days Tracker</h1>
+  <label>
+    <input type="checkbox" id="logCheckbox"> Log today's activity
+  </label>
+  <div id="streak">Consecutive days: 0</div>
+
+  <script>
+    const checkbox = document.getElementById('logCheckbox');
+    const streakDisplay = document.getElementById('streak');
+    let lastLoggedDate = localStorage.getItem('lastLoggedDate');
+    let streak = parseInt(localStorage.getItem('streak'), 10) || 0;
+
+    function updateStreak(today) {
+      const yesterday = new Date(today);
+      yesterday.setDate(yesterday.getDate() - 1);
+
+      if (lastLoggedDate === yesterday.toISOString().split('T')[0]) {
+        streak++;
+      } else if (lastLoggedDate !== today.toISOString().split('T')[0]) {
+        streak = 1; // Reset streak if not consecutive
+      }
+      localStorage.setItem('streak', streak);
+      localStorage.setItem('lastLoggedDate', today.toISOString().split('T')[0]);
+      streakDisplay.textContent = 'Consecutive days: ' + streak;
+    }
+
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) {
+        const today = new Date();
+        updateStreak(today);
+      }
+    });
+
+    // Display the current streak on load
+    window.onload = function() {
+      streakDisplay.textContent = 'Consecutive days: ' + streak;
+    };
+  </script>
+</body>
+</html>
