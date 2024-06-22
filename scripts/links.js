@@ -5,33 +5,52 @@ async function getLinks() {
   
     const response = await fetch(linksURL);
     const data = await response.json();
+    console.log(data)
     displayLinks(data.lessons); // Assuming data structure has lessons array
+    
  
 }
 
 getLinks(); // Call the function to execute it
-
-function displayLinks(lessons) {
-  const ul = document.querySelector("#learning-activities");
-
-  lessons.forEach(lesson => {
-    const li = document.createElement("li");
-    const weekHeader = document.createElement("h5");
-    const urlLink = document.createElement("a");
-    const titleHeader = document.createElement("h5");
-
-    weekHeader.textContent = `Week ${lesson.lesson}`;
-    urlLink.href = lesson.url;
-    urlLink.textContent = lesson.title;
-    if (lesson.target) {
-      urlLink.target = lesson.target;
+function displayLinks(weeks) {
+    const ul = document.querySelector("#learning-activities");
+  
+    // Create an empty object to hold the weeks and their lessons
+    const weeksMap = {};
+  
+    // Loop through the weeks and organize them into the weeksMap
+    weeks.forEach(week => {
+      // If the week doesn't exist in the map, create an array for it
+      if (!weeksMap[week.lesson]) {
+        weeksMap[week.lesson] = [];
+      }
+      // Add the current week's lessons to the map
+      weeksMap[week.lesson].push(...week.links);
+    });
+  
+    // Now, create the list items for each week
+    for (const [weekNumber, links] of Object.entries(weeksMap)) {
+      const weekLi = document.createElement("li");
+      const weekHeader = document.createElement("h5");
+      weekHeader.textContent = `Week ${weekNumber}`;
+      weekLi.appendChild(weekHeader);
+  
+      // Create a sublist for the lessons in this week
+      const lessonUl = document.createElement("ul");
+      links.forEach(link => {
+        const lessonLi = document.createElement("li");
+        const lessonA = document.createElement("a");
+        lessonA.href = baseUrl + link.url;
+        lessonA.textContent = link.title;
+        if (link.target) {
+          lessonA.target = link.target;
+        }
+        lessonLi.appendChild(lessonA);
+        lessonUl.appendChild(lessonLi);
+      });
+  
+      weekLi.appendChild(lessonUl);
+      ul.appendChild(weekLi);
     }
-    titleHeader.textContent = lesson.title;
-
-    li.appendChild(weekHeader);
-    li.appendChild(urlLink);
-    li.appendChild(titleHeader);
-
-    ul.appendChild(li);
-  });
-}
+  }
+  
