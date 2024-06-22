@@ -1,0 +1,110 @@
+{
+    "lessons": [
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design.html",
+            "title": "Week 2"
+          },
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/images/Screenshot 2024-05-06 at 5.56.59 PM.png",
+            "title": "CSS Combinators (screenshot link)",
+            "target": "_blank"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "https://codepen.io/aheiner2001/pen/Baeaaxd",
+            "title": "CSS Pseudo-elements1",
+            "target": "_blank"
+          },
+          {
+            "url": "https://codepen.io/aheiner2001/pen/GRaRRbE",
+            "title": "Responsive \"Hamburger\" Menu",
+            "target": "_blank"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/aheiner2001/pen/qBGdOmJ",
+            "title": "Week 4: CSS Pseudo-classes\" Menu",
+            "target": "_blank"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "05: Book of Mormon Favorite Chapters Application"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "images/landscape_1_45_1_29.webp",
+            "title": "WebP Image File Format"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lessons/lazyload.html",
+            "title": "Lazy Loading"
+          },
+          {
+            "url": "lesson07/bom.html",
+            "title": "Web Storage API - localStorage"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "week8/tablebuild.html",
+            "title": "HTML Tables for Data Presentation"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "Form-start/index.html",
+            "title": "Building Web Forms"
+          },
+          {
+            "url": "lesson09/new-ward-members.json",
+            "title": "Json Ward"
+          },
+          {
+            "url": "lesson09/prophets.html",
+            "title": "The Fetch API"
+          }
+        ]
+      }
+    ]
+  }
+  
