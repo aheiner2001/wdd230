@@ -9,9 +9,10 @@ body{
 }
 #cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
     gap: .2rem;
-    width: 90%;
+   
     margin: 0 auto;
   }
 
@@ -19,6 +20,11 @@ section{
     background-color: rgba(8, 45, 92, 0.429);
     padding: 1rem;
     width: 100%;
+    align-items: center;
+   
+}
+section img{
+    max-width: 325px;
 }
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,5 +36,5 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
   }
-  b
+  
   }
