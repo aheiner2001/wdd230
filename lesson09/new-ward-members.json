@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+    "familyName": "Smith",
+    "moveInDate": "2022-03-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Remy Rat",
+        "gender": "He is a rat",
+        "birthdate": "2001-11-12"
+      },
+      {
+        "name": "Filius Cobb",
+        "gender": "Female",
+        "birthdate": "2016-7-8"
+      },
+      {
+        "name": "Ramton",
+        "gender": "Male",
+        "birthdate": "2010-02-03"
+      },
+      {
+        "name": "General Gravy",
+        "gender": "Robot",
+        "birthdate": "1111-21-22"
+      },
+      {
+        "name": "Humpry Willis",
+        "gender": "Malish",
+        "birthdate": "2015-04-10"
+      }
+    ]
+    }
+  }
