@@ -42,7 +42,6 @@ const displayProphets = (prophets) => {
         
         cards.appendChild(card);
     });
-    let card = document.createElement("section");
-    cards.appendChild(card);
+  
 
   }
