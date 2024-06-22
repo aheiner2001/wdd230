@@ -28,3 +28,4 @@ range.addEventListener("input", displayRating);
 function displayRating(){
     rangevalue.innerHTML = range.value;
 }
+
