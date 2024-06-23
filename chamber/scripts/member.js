@@ -45,3 +45,34 @@ function displayLinks(members) {
         cards.appendChild(card);
     });
 }
+
+function checkicons() {
+    const cards = document.querySelector('#memcardcontainer'); 
+    const gridy = document.querySelector(".gridy");
+    const listy = document.querySelector(".listy");
+  
+    gridy.addEventListener('click', function() {
+      if (!this.classList.contains('active')) {
+        this.classList.add('active');
+        listy.classList.remove('active');
+        cards.classList.remove("listyp");
+        cards.classList.add("memcardcontainer");
+      }
+    });
+  
+    listy.addEventListener('click', function() {
+      if (!this.classList.contains('active')) {
+        this.classList.add('active');
+        gridy.classList.remove('active');
+        cards.classList.remove("memcardcontainer");
+        cards.classList.add("listyp");
+      }
+    });
+  }
+  
+  checkicons(); // Call the function to initialize
+  
+
+
+
+

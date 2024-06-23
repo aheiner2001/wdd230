@@ -463,20 +463,83 @@ color: #4c4c4c;
 #memcardcontainer{
   width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+
+  
+}
+.memcardcontainer{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+background-color: white;
+min-height: 100vh;
+gap: 1rem;
+padding: 1rem;
+}
+
+.listyp {
+  display: block; /* Change from grid to block to stack items */
+  width: 90%;
+  margin: 0 auto;
   background-color: white;
+
   min-height: 100vh;
   gap: 1rem;
   padding: 1rem;
-  
-
 }
 
+.listyp .memcard {
+  margin-bottom: 1rem; /* Space between stacked items */
+}
+.listyp .memcard:nth-child(even) {
+  background-color: #aecee387;
+}
+.listyp .memcard img {
+  display: none; /* Hide images in list view */
+}
+
+
+
 .memcard{
+width: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.memcard img{
+
+width: fit-content;
+}
+
+.modecontainer{
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-content: center;
+padding: 1rem;
+  gap: 3rem;
+}
+
+
+
+
+.modecontainer img{
+  width: 50px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.modecontainer img:hover{
+  box-shadow: 0 0 10px rgba(105, 95, 95, 0.1);
+
+
+}
+.active{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: .5rem;
+border: solid black;
+border-radius: .3rem;
+background-color: hsla(236, 69%, 41%, 0.415);
 }
 
 
