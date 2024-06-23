@@ -460,6 +460,27 @@ margin-bottom: 1.5rem;
 color: #4c4c4c;
 }
 
+#memcardcontainer{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #022B3A;
+  min-height: 100vh;
+  gap: 1rem;
+  padding: 1rem;
+  
+
+}
+
+.memcard{
+  background-color: #1D96E8;
+
+
+}
+
+
 
 
 @media only screen and (min-width: 770px){
@@ -510,3 +531,4 @@ color: #4c4c4c;
   list-style-type: disc;
   margin-left: 20px;
 }
+

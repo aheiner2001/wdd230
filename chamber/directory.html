@@ -11,27 +11,66 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGU92n4MVA8bVOEUUCHiPnqUd-gR-4r8G8A&usqp=CAU">
     <meta property="og:url" content="https://aheiner2001.github.io/wdd230/chamber/index.html"> 
-     
+   
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     
     <title>Chamber Site</title>
+
+
+
+    <!-- TODO
+    
+    
+  
+
+Optimize all the images you are using on the page
+
+
+
+
+Label each image with a text overlay using the words "small", "medium", and "large", respectively, so that they are easily recognized when testing the page in the different viewports.
+
+Use the srcset to provide three different versions of the optimized image to be used in the small, medium, and large views.
+
+Convert your logo image, wherever it is used, to the Google WebP image file format.
+
+Add a wind chill value to the weather section on the home page. This means you have to have a current temperature and windspeed indicator in the weather section as well. The wind chill factor is a computed value using the current temperature and wind speed which values you will extract from the page using JavaScript. Create a "windchill.js" file and add it to your "scripts" folder. The "windchill.js" script should
+get the two input values of temperature and wind speed,
+
+check to make sure they meet the specification limits (<=50°F and >3.0mph) allowed to officially calculate the wind chill, and
+either calculate and display the wind chill factor value or display "N/A" (not applicable) if the input values did not meet the requirements.-->
 </head>
 <body>
     <div class="headertopborder">
     </div>
     <header>
         
-        <img src="images/Designer.png" alt="">
-        <h1>Chamber Site</h1>
-
+        <div class="logotitle">
+            <img src="images/Designer.png" alt="">
+            <h1>Chamber Site</h1>
+    
+        </div>
+        
+        <div class="leftbox">
+            <button id="menu"></button>
+            
+            <label id="switch" >
+                
+                <input type="checkbox" class="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </div>
+        
+       
  
 
     </header>
     <nav>
-        <a href="index.html" >Home</a>
+        <a href="index.html" class="current-page">Home</a>
      
-        <a href="directory.html" class="current-page">Directory</a>
+        <a href="directory.html">Directory</a>
       
         <a href="discover.html">Discover</a>
         
@@ -40,64 +79,22 @@
 
    
 
-    <main>
+   <main>
 
-        <div class="hero">
-            <div class="calltoaction">
-                <button>Join!</button>
-            </div>
-           
-            <img class="hero-image" src="https://www.cityofnampa.us/ImageRepository/Document?documentID=16062" alt="">
-           
+    <div id="memcardcontainer">
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
+    <div class="memcard"></div>
 
-            
-        </div>
-        <div class="maincardcontainer">
 
-            <div class="card">
-                <h1>Events</h1>
-                <hr>
-                <div class="event">
-                    <h3>Event 1 </h3>
-                    <p>Baby is born </p>
-                </div>
-              
-            </div>
-    
-            <div class="card">
-                <h1>weather</h1>
-                <hr>
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aperiam eum ducimus animi voluptates veniam aut blanditiis. Inventore, earum cum. Qui sed a aliquid quasi facilis minima? Nesciunt eligendi nisi unde maiores voluptatum pariatur quia culpa iste, eum quae accusamus harum, in, sed quo cum fuga sint porro numquam. Cum.            </div>
-        </div>
-     
-        <h1>Member Spotlights</h1>
-        <section>
-            
-            <div class="card">
-                
-            </div>
-
-            <div class="card">
-
-            </div>
-
-            <div class="card">
-
-            </div>
-
-        </section>
-       
-
-    
-
-        <!-- The main area will have content specific to the home page. The five required components are as follows: DONE
-
-            a hero image. Much of the layout work on this will be completed in the next lesson. DONE
-            a call to action link to join the chamber of commerce. Much of this work will be completed in the next lesson. DONE
-            a current event(s) section DONE
-            a weather card section DONE
-            a section containing one to three company 'spotlights' advertisements.DONE --> 
-    </main>
+    </div>
+   </main>
 
     <footer>
 <!-- The footer area must contain contact information and some additiona
@@ -107,16 +104,15 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aperiam eum ducim
 
     
  -->
- <p id="copyright">
-    &copy; <span id="currentYear"></span> Aaron Heiner, Idaho
-</p>
-WDD 230 Chamber Site Project
- <p id="lastModified">Last Modified:</p>
+ <p>&copy; 2024 Aaron Heiner. All rights reserved.</p>
+        <p>This project is dedicated to showcasing our community's vibrant business ecosystem.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+       
     </footer>
    
-    </script>
     
 
-
+<script src="scripts/script.js"></script>
+<script src="scripts/member.js"></script>
 </body>
 </html>

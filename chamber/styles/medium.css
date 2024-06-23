@@ -1,0 +1,7 @@
+@media (min-width: 420px) and (max-width: 768px) {
+    #memcardcontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}
