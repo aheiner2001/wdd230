@@ -466,7 +466,7 @@ color: #4c4c4c;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #022B3A;
+  background-color: white;
   min-height: 100vh;
   gap: 1rem;
   padding: 1rem;
@@ -475,9 +475,8 @@ color: #4c4c4c;
 }
 
 .memcard{
-  background-color: #1D96E8;
-
-
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 

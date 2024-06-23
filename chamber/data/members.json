@@ -1,13 +1,78 @@
 {
     "members": [
-      {
-        "name": "ohan",
-        "address": "baa",
-        "phoneNum": "45045",
-        "url": "url",
-        "imagefile": "https://cdn-icons-png.flaticon.com/128/6737/6737635.png",
-        "memLevel": "level"
-      }
-    ]
+        {
+          "name": "Albertsons",
+          "address": "2400 12th Ave Rd, Nampa, ID 83686",
+          "phoneNum": "(208) 466-3753",
+          "url": "https://www.albertsons.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/2673/2673368.png",
+          "memLevel": "Platinum"
+        },
+        {
+          "name": "Micron Technology",
+          "address": "8000 S Federal Way, Boise, ID 83716",
+          "phoneNum": "(208) 368-4000",
+          "url": "https://www.micron.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/731/731946.png",
+          "memLevel": "Gold"
+        },
+        {
+          "name": "St. Luke's Nampa Medical Center",
+          "address": "9850 W St Luke's Dr, Nampa, ID 83687",
+          "phoneNum": "(208) 205-2500",
+          "url": "https://www.stlukesonline.org/locations/hospitals/st-lukes-nampa-medical-center",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/4101/4101276.png",
+          "memLevel": "Silver"
+        },
+        {
+          "name": "Idaho Central Credit Union",
+          "address": "312 3rd Ave S, Nampa, ID 83651",
+          "phoneNum": "(208) 846-7000",
+          "url": "https://www.iccu.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/3507/3507487.png",
+          "memLevel": "Gold"
+        },
+        {
+          "name": "College of Western Idaho",
+          "address": "5500 E Opportunity Dr, Nampa, ID 83687",
+          "phoneNum": "(208) 562-3000",
+          "url": "https://www.cwidaho.cc",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/5281/5281520.png",
+          "memLevel": "Silver"
+        },
+        {
+          "name": "WinCo Foods",
+          "address": "1230 Caldwell Blvd, Nampa, ID 83651",
+          "phoneNum": "(208) 465-4601",
+          "url": "https://www.wincofoods.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/3186/3186022.png",
+          "memLevel": "Bronze"
+        },
+        {
+          "name": "Amalgamated Sugar Company",
+          "address": "1980 E Chicago St, Caldwell, ID 83605",
+          "phoneNum": "(208) 466-3541",
+          "url": "https://www.amalgamatedsugar.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/1538/1538896.png",
+          "memLevel": "Platinum"
+        },
+        {
+          "name": "D&B Supply",
+          "address": "620 Caldwell Blvd, Nampa, ID 83651",
+          "phoneNum": "(208) 465-1711",
+          "url": "https://www.mydbsupply.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/3010/3010357.png",
+          "memLevel": "Gold"
+        },
+        {
+          "name": "Primary Health Medical Group",
+          "address": "114 W Iowa Ave, Nampa, ID 83686",
+          "phoneNum": "(208) 466-6200",
+          "url": "https://www.primaryhealth.com",
+          "imagefile": "https://cdn-icons-png.flaticon.com/128/3041/3041217.png",
+          "memLevel": "Silver"
+        }
+      ]
+      
   }
   

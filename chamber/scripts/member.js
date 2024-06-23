@@ -35,11 +35,11 @@ function displayLinks(members) {
         img.setAttribute("alt", `${member.name}'s image`);
         memLevel.textContent = member.memLevel;
 
+        card.appendChild(img);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phoneNum);
         card.appendChild(URL);
-        card.appendChild(img);
         card.appendChild(memLevel);
 
         cards.appendChild(card);
