@@ -50,7 +50,7 @@ function checkicons() {
     const cards = document.querySelector('#memcardcontainer'); 
     const gridy = document.querySelector(".gridy");
     const listy = document.querySelector(".listy");
-  
+    cards.classList.add("memcardcontainer");
     gridy.addEventListener('click', function() {
       if (!this.classList.contains('active')) {
         this.classList.add('active');
