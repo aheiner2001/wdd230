@@ -114,6 +114,8 @@ main {
     height: 50px;
     align-items: center;
     align-content: center;
+    width: 75%;
+    margin: 0 auto;
     
 }
 .card p, figcaption :nth-child(even) {
