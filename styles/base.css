@@ -73,7 +73,10 @@ nav a:hover {
 }
 
 /* Media query for mobile view */
-
+#weather-icon {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
 
 
 a:visited {
@@ -107,7 +110,27 @@ main {
     margin: 20px auto;
     text-align: left;
 }
-
+.card img, p, figcaption {
+    height: 50px;
+    align-items: center;
+    align-content: center;
+    
+}
+.card p, figcaption :nth-child(even) {
+    background-color: #4D5B97; /* Match the background color */
+    color: white; 
+    
+}
+#current-temp{
+   align-items: center;
+    align-content: center;
+    background-color: #4D5B97; /* Match the background color */
+    color: white; /* Optional: if you want the text to be white */
+   
+}
+.weather{
+    display: inline;
+}
 .info {
     text-align: center;
 }
