@@ -26,6 +26,59 @@ The main content are pieces must show some difference between the mobile and lar
     font-style: normal;
 }
 
+.weather-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.weather-container span,
+.weather-container img,
+.weather-container figcaption {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#weather-icon {
+  width: 50px;
+  height: 50px;
+}
+#forecast div{
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 75%;
+  background-color: white;
+  border-radius: .3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.current-weather{
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 75%;
+  background-color: rgba(102, 182, 253, 0.274);
+  border-radius: .3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.banner {
+  background-color: #ffcc00;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.banner .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
 #menu{
     display: none;
 }

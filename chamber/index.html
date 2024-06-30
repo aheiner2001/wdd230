@@ -16,70 +16,31 @@
     <link rel="stylesheet" href="styles/base.css">
     
     <title>Chamber Site</title>
-
-
-
-    <!-- TODO
     
-    
-  
-
-Optimize all the images you are using on the page
-
-
-
-
-Label each image with a text overlay using the words "small", "medium", and "large", respectively, so that they are easily recognized when testing the page in the different viewports.
-
-Use the srcset to provide three different versions of the optimized image to be used in the small, medium, and large views.
-
-Convert your logo image, wherever it is used, to the Google WebP image file format.
-
-Add a wind chill value to the weather section on the home page. This means you have to have a current temperature and windspeed indicator in the weather section as well. The wind chill factor is a computed value using the current temperature and wind speed which values you will extract from the page using JavaScript. Create a "windchill.js" file and add it to your "scripts" folder. The "windchill.js" script should
-get the two input values of temperature and wind speed,
-
-check to make sure they meet the specification limits (<=50°F and >3.0mph) allowed to officially calculate the wind chill, and
-either calculate and display the wind chill factor value or display "N/A" (not applicable) if the input values did not meet the requirements.-->
 </head>
 <body>
-    <div class="headertopborder">
-    </div>
+    <div class="headertopborder"></div>
     <header>
-        
         <div class="logotitle">
             <img src="images/Designer.png" alt="">
             <h1>Chamber Site</h1>
-    
         </div>
-        
         <div class="leftbox">
             <button id="menu"></button>
-            
-            <label id="switch" >
-                
+            <label id="switch">
                 <input type="checkbox" class="checkbox">
                 <span class="slider round"></span>
-              </label>
+            </label>
         </div>
-        
-       
- 
-
     </header>
     <nav>
         <a href="index.html" class="current-page">Home</a>
-     
         <a href="directory.html">Directory</a>
-      
         <a href="discover.html">Discover</a>
-        
         <a href="join.html">Join</a>
-        </nav>
-
-   
+    </nav>
 
     <main>
-
         <div class="hero">
             <div class="calltoaction">
                 <button>Join!</button>
@@ -87,101 +48,79 @@ either calculate and display the wind chill factor value or display "N/A" (not a
             <div class="herocard">
                 <h1>image slider placeholder</h1>
             </div>
-            
-           
-            <!-- <img class="hero-image" src="https://www.cityofnampa.us/ImageRepository/Document?documentID=16062" alt=""> -->
-           
-            <picture>
-               
-                <source media="(max-width: 480px)" srcset="images/small.webp" data-text="small">
-
-                <source media="(max-width: 768px) and (max-width: 768px)" srcset="images/medium.webp">
-                <source media="(max-width: 1601px)" srcset="images/wdd230-org_optimized.webp">
-    
-                <img class="hero-image" src="images/wdd230-org_optimized.webp" alt="Hero Image">
-            </picture>
-            
-
-            
+          <img src="https://www.cityofnampa.us/ImageRepository/Document?documentID=16062" alt="">
         </div>
         
         <div class="maincardcontainer">
-
             <div class="card">
                 <h1>Events</h1>
                 <hr>
                 <div class="event">
-                    <h3>Event 1 </h3>
-                    <p>Baby is born </p>
+                    <h3>Event 1</h3>
+                    <p>Baby is born</p>
                 </div>
                 <div class="event">
-                    <h3>Event 1 </h3>
-                    <p>Baby #2 is born </p>
+                    <h3>Event 1</h3>
+                    <p>Baby #2 is born</p>
                 </div>
                 <div class="event">
-                    <h3>Event 1 </h3>
-                    <p>Baby #3 is born </p>
+                    <h3>Event 1</h3>
+                    <p>Baby #3 is born</p>
                 </div>
-              
             </div>
-    
             <div class="card">
-                <h1>weather</h1>
+                <h1>Weather</h1>
                 <hr>
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aperiam eum ducimus animi voluptates veniam aut blanditiis. Inventore, earum cum. Qui sed a aliquid quasi facilis minima? Nesciunt eligendi nisi unde maiores voluptatum pariatur quia culpa iste, eum quae accusamus harum, in, sed quo cum fuga sint porro numquam. Cum.            </div>
+                <div class="weather-container">
+                    <div class = "current-weather">
+                        <h2>Today</h2>
+                        <span id="current-temp"></span>
+                        <img id="weather-icon" alt="Weather icon">
+                        <figcaption id="caption-desc"></figcaption>
+                        <br>
+                    </div>
+        
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast"></div>
+                </div>
+            </div>
         </div>
      
         <h1>Member Spotlights</h1>
         <section>
-            
             <div class="card">
-                <h3>title</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?</p>
             </div>
             <div class="card">
-                <h3>title</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?</p>
             </div>
             <div class="card">
-                <h3>title</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?</p>
             </div>
             <div class="card">
-                <h3>title</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad?</p>
             </div>
-
-
         </section>
-       
 
-    
-
-        <!-- The main area will have content specific to the home page. The five required components are as follows: DONE
-
-            a hero image. Much of the layout work on this will be completed in the next lesson. DONE
-            a call to action link to join the chamber of commerce. Much of this work will be completed in the next lesson. DONE
-            a current event(s) section DONE
-            a weather card section DONE
-            a section containing one to three company 'spotlights' advertisements.DONE --> 
+        <div class="banner hidden" id="meet-greet-banner">
+            <span>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</span>
+            <span class="close-btn" onclick="closeBanner()">❌</span>
+        </div>
     </main>
 
     <footer>
-<!-- The footer area must contain contact information and some additiona
-    l development information including: your full name, the fact that this 
-    is a project for WDD 230, and the last modification date of the page, which is driven dynamically through JavaScript.
-
-
-    
- -->
- <p>&copy; 2024 Aaron Heiner. All rights reserved.</p>
+        <p>&copy; 2024 Aaron Heiner. All rights reserved.</p>
         <p>This project is dedicated to showcasing our community's vibrant business ecosystem.</p>
         <p>Last Modified: <span id="lastModified"></span></p>
-       
     </footer>
    
-    
-
-<script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
+ 
 </body>
 </html>
