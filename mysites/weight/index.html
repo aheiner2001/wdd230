@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="weight-loss.png">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Weight Tracker</h1>
+        <div class="input-group">
+            <label for="goalWeight">Goal Weight (lbs):</label>
+            <input type="number" id="goalWeight">
+        </div>
+        <div class="input-group">
+            <label for="dailyWeight">Today's Weight (lbs):</label>
+            <input type="number" id="dailyWeight">
+        </div>
+        <button onclick="saveWeight()">Save Weight</button>
+        <button onclick="resetData()">Reset</button>
+        <h2>Weight Log</h2>
+        <ul id="weightLog"></ul>
+        <div id="goalStatus"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

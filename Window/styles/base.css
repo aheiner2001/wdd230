@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@font-face {
+    font-family: 'Avenir LT W01 35 Light';
+    src: url('fonts/avenir-lt-w01_35-light.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/avenir-lt-w01_35-light.woff') format('woff'),   /* Older Browsers */
+         url('fonts/avenir-lt-w01_35-light.ttf') format('truetype'); /* Fallback for legacy browsers */
+    font-weight: 200; /* Adjust font weight if needed */
+    font-style: normal; /* Adjust font style if needed */
+}
+
+
+
+body{
+    width: 100%;
+}
+main{
+
+    margin-top: 287px;
+}
+
+:root {
+    --pinkbar: #cfd7e8;
+    --pinkbarheight: 22px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Example usage */
+footer{
+    font-family: 'Avenir LT W01 35 Light', Arial, sans-serif;
+    background-color: #292325;
+    color: #FFFFFF;
+    height:4.5rem;
+    text-align: center;
+    align-content: center;
+   
+    bottom: 0;
+    font-size: 14px;
+    @font-face {
+        font-family: 'Avenir LT W01 35 Light';
+        src: url('fonts/avenir-lt-w01_35-light.woff2') format('woff2');
+        font-weight: 50px;
+        font-style: normal;
+    }
+}
+
+nav{
+    position: absolute; /* Position absolute within the header */
+    font-family: 'Cinzel', serif; 
+    bottom: 14px; /* Position 14px from the bottom of the header */
+    width: 100%; /* Ensure nav takes the full width if needed */
+    align-content: center;
+    font-weight: 700;
+    color: rgb(175, 182, 186) ;
+    font-size: 14px;
+  width: 100%;
+  height: 44px;
+ 
+
+}
+nav a{
+    color: #787C80 ;
+    text-decoration: none;
+    margin: 0 2rem 0 2rem;
+   
+}
+nav a:visited{
+    color: #787C80 ;
+    text-decoration: none;
+    
+
+}
+nav a:hover{
+    color:  rgb(175, 182, 186);
+    transition: color 0.3s ease-in; 
+}
+nav a:active{
+    color:  rgb(175, 182, 186);
+}
+
+header {
+    height: 287px;
+    background-color: #FBFEFD;
+    border-bottom: #AEB6BA solid 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensure the header takes the full width */
+    z-index: 2; /* Ensure the header is above other fixed elements */
+   
+
+}
+
+header .cornertext{
+font-family: 'Cinzel', serif; 
+font-weight: 400;
+right: 92px;
+top: 10px;
+z-index: 3;
+position: fixed;
+color: #5F5658;
+font-size: 16px;
+
+}
+
+header img{
+    height: 216px;
+    width: 208px;
+    top: 0;
+    left: 617px;
+    position: fixed;
+    z-index: 1;
+    opacity: 80%;
+}
+.pinkbar{
+    height: 22px;
+    width: 100%;
+    background-color: var(--pinkbar);
+    top: 102px;
+    position: fixed;
+    z-index: 0;
+   
+    
+}
+
+.hero{
+    width: 1195px;
+    height: 209px;
+    margin: 0 auto;
+}
+.hero img{
+    width: 100%;
+}
+
+
+.imgcontainer{
+    width: 1165px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+    margin-top: 16px;
+  
+}
+.imgcontainer img{
+    width: 365px;
+    height: 436px;
+}
+.imgcontainer img:nth-child(3n+2) {
+    margin-top: 72px;
+    margin-bottom: 36px;
+  }
+  .inquiry{
+    border:#2F292B solid 1px;
+    width: 142px;
+    font-family: 'Cinzel', serif; 
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: .2rem;
+    align-content: center;
+    text-align: center;
+    font-size: 14px;
+  }
+  .inquiry:hover{
+    background-color: #2f292b;
+    color: white;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+  }
+

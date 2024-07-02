@@ -4,7 +4,7 @@ const captionDesc = document.querySelector('#caption-desc');
 
 const forecastContainer = document.querySelector('#forecast');
 const banner = document.querySelector('#meet-greet-banner');
-const apiKey = "5ca84e25ba24c56088236b3cf8ff4323"; // Replace with your actual API key
+const apiKey = "5ca84e25ba24c56088236b3cf8ff4323"; 
 const lat = 43.586157;
 const lon = -116.645294;
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
