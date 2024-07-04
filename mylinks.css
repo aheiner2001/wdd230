@@ -39,3 +39,17 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
+
+@media only screen and (max-width: 999px ){
+
+
+ main{
+    grid-template-columns: 1fr ;
+ }
+
+ .ideacards{
+    min-height: 100px;
+  
+    
+}
+}
