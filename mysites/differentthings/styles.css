@@ -216,5 +216,10 @@ button:active {
     .calendar-container{
         padding: none;
     }
+    .reset{
+        top: 0;
+      display: none;
+       
+    }
 }
     
