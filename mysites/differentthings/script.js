@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     createCalendar();
     loadCalendar();
     loadToDoList();
+
+
+});
+
+const daycards = document.querySelectorAll("#calendar div")
+
+daycards.forEach(card => {
+    card.addEventListener("click", () => {
+       card.classList.add("finished")
+    });
 });
 
 function createCalendar() {
@@ -70,6 +80,7 @@ function loadCalendar() {
         }
     });
 }
+
 
 function saveToDoList() {
     const toDoListItems = document.querySelectorAll('#things-to-do-list li');
