@@ -415,6 +415,7 @@ input:checked + .slider:before {
   
 }
 
+
 .leftbox{
   text-align: right;
 grid-column: 3/4;

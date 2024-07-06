@@ -25,6 +25,7 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 const cards = document.querySelectorAll(".card");
 const nav = document.querySelectorAll("a");
+const weathercard = document.querySelectorAll(".forecast-day")
 
 
 
@@ -33,6 +34,9 @@ modeButton.addEventListener('change', function() {
     body.classList.toggle('dark-mode', this.checked);
 	main.classList.toggle('dark-mode',this.checked);
 	footer.classList.toggle('dark-mode',this.checked);
+	
+  
+    
 	
     cards.forEach(card => {
         card.classList.toggle('dark-mode', this.Checked);
@@ -93,3 +97,26 @@ document.addEventListener("DOMContentLoaded", function() {
     var timestampField = document.getElementById("timestamp");
     timestampField.value = Date.now();
   });
+
+
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const modeButton = document.getElementById('modeButton');
+    const body = document.body;
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+    const main = document.querySelector('main');
+    const navLinks = document.querySelectorAll('nav a');
+
+    modeButton.addEventListener('change', function() {
+        body.classList.toggle('dark-mode', this.checked);
+        header.classList.toggle('dark-mode', this.checked);
+        footer.classList.toggle('dark-mode', this.checked);
+        main.classList.toggle('dark-mode', this.checked);
+
+        navLinks.forEach(link => {
+            link.classList.toggle('dark-mode', this.checked);
+        });
+    });
+});
