@@ -113,15 +113,15 @@ The main content are pieces must show some difference between the mobile and lar
     padding: 2rem;
     margin-top: 2rem;
 }
-.card{
- background-color:#E9E9E9;
- padding: 2rem;
- text-align: left;
- width: 100%;
- border: .25rem #b7b7b7 solid;
- border-radius: 15px;
- 
+.card {
+  background-color: #EDF6F9;
+  padding: 2rem;
+  text-align: left;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 
 body{
