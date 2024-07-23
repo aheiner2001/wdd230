@@ -8,10 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const rentalCard = document.createElement('div');
         rentalCard.classList.add('rental-card');
         
-        const rentalImage = document.createElement('img');
-        rentalImage.src = rental.image;
-        rentalImage.alt = rental.rentalType;
-        rentalCard.appendChild(rentalImage);
+       
 
         const rentalInfo = document.createElement('div');
         rentalInfo.classList.add('rental-info');

@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 @font-face {
     font-family: 'Avenir LT W01 35 Light';
     src: url('fonts/avenir-lt-w01_35-light.woff2') format('woff2'), /* Modern Browsers */
          url('fonts/avenir-lt-w01_35-light.woff') format('woff'),   /* Older Browsers */
          url('fonts/avenir-lt-w01_35-light.ttf') format('truetype'); /* Fallback for legacy browsers */
-    font-weight: 200; /* Adjust font weight if needed */
-    font-style: normal; /* Adjust font style if needed */
+    font-weight: 200;
+    font-style: normal;
 }
-
 
 body {
     width: 100%;
     position: relative;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .background {
     background-image: url('/APROJECT/images/seem.png');
-    background-repeat: repeat; /* Ensure the image repeats */
+    background-repeat: repeat;
     background-size: 300px 300px;
 }
 
@@ -32,157 +34,136 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Changed from min-height to height */
-    background: url('/APROJECT/images/hero1.png');
-    background-repeat: repeat; /* Ensure the image repeats */
-    background-size: 400px 400px;
-    opacity: 0.5; /* Adjust the opacity as needed */
-    z-index: -1; /* Ensure the background stays behind the content */
-}
-
-/* Ensure the body element extends beyond the initial viewport height if needed */
-html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    background: url('/APROJECT/images/hero1.png');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-
-main{
-
+main {
     margin-top: 287px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0e4a54;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 2rem;
+    background-color: #FCFCFC;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 :root {
     --pinkbar: linear-gradient(to right, rgba(29, 156, 220, 0.805), #46a5bb6c);
     --pinkbarheight: 22px;
-
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #0e4a54;
-    
-}
 
-/* Example usage */
-footer{
+footer {
     font-family: 'Avenir LT W01 35 Light', Arial, sans-serif;
     background-color: #292325;
     color: #FFFFFF;
-    height:4.5rem;
+    height: 4.5rem;
     text-align: center;
     align-content: center;
-   
     bottom: 0;
     font-size: 14px;
-    @font-face {
-        font-family: 'Avenir LT W01 35 Light';
-        src: url('fonts/avenir-lt-w01_35-light.woff2') format('woff2');
-        font-weight: 50px;
-        font-style: normal;
-    }
 }
 
-nav{
-    position: absolute; /* Position absolute within the header */
-    font-family: 'Cinzel', serif; 
-    bottom: 14px; /* Position 14px from the bottom of the header */
-    width: 100%; /* Ensure nav takes the full width if needed */
+nav {
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    bottom: 14px;
+    width: 100%;
     align-content: center;
     font-weight: 700;
     color: #FF7477;
     font-size: 14px;
-  width: 100%;
-  height: 44px;
- 
+    height: 44px;
+}
 
-}
-nav a{
-    color: #FF7477 ;
-    text-decoration: none;
-    margin: 0 2rem 0 2rem;
-   
-}
-nav a:visited{
+nav a {
     color: #FF7477;
     text-decoration: none;
-    
+    margin: 0 2rem;
+}
 
+nav a:visited {
+    color: #FF7477;
+    text-decoration: none;
 }
-nav a:hover{
-    color:  rgb(175, 182, 186);
-    transition: color 0.3s ease-in; 
+
+nav a:hover {
+    color: rgb(175, 182, 186);
+    transition: color 0.3s ease-in;
 }
-nav a:active{
-    color:  rgb(175, 182, 186);
+
+nav a:active {
+    color: rgb(175, 182, 186);
 }
 
 header {
-    height: 287px;
+    height: 350px;
     background-color: #FBFEFD;
     border-bottom: #AEB6BA solid 5px;
-    
     align-items: center;
     text-align: center;
     display: flex;
     justify-content: center;
     position: relative;
     top: 0;
-    width: 100%; /* Ensure the header takes the full width */
-    z-index: 2; /* Ensure the header is above other fixed elements */
-   
-
+    width: 100%;
+    z-index: 2;
 }
 
-header .cornertext{
-font-family: 'Cinzel', serif; 
-font-weight: 400;
-right: 92px;
-top: 10px;
-z-index: 3;
-position: absolute;
-color: #5F5658;
-font-size: 16px;
-
+header .cornertext {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    right: 92px;
+    top: 10px;
+    z-index: 3;
+    position: absolute;
+    color: #5F5658;
+    font-size: 16px;
 }
+
 h1 {
     font-size: 25px;
-    color: #007286; /* Base color */
+    color: #007286;
     display: inline;
 }
 
-
-
-
-header img{
+header img {
     height: 216px;
     width: 208px;
+    margin: 0 auto;
     top: 0;
-    left: 617px;
-    position: absolute;
+    
+    
     z-index: 1;
     opacity: 100%;
     border: solid 5px #4DACD7;
 }
-.pinkbar{
+
+.pinkbar {
     height: 22px;
     width: 100%;
     background-image: var(--pinkbar);
     top: 102px;
     position: absolute;
     z-index: 0;
-   
-    
 }
 
-.hero{
-  width: 100%;
+.hero {
+    width: 100%;
     height: 400px;
     margin: 0 auto;
     background-color: #1A5E63;
@@ -190,34 +171,30 @@ header img{
     margin-bottom: 2rem;
     text-align: center;
     align-content: center;
-   
-    
 }
 
-
-
-.imgcontainer{
+.imgcontainer {
     width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-   
-  
 }
-.imgcontainer img{
-    width: 100%
-    
+
+.imgcontainer img {
+    width: 100%;
 }
+
 .imgcontainer img:nth-child(3n+2) {
     margin-top: 72px;
     margin-bottom: 36px;
-  }
-  .inquiry{
-    border:#2F292B solid 1px;
+}
+
+.inquiry {
+    border: #2F292B solid 1px;
     width: 142px;
-    font-family: 'Cinzel', serif; 
-    height: 40px;
+    font-family: 'Cinzel', serif;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 46px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -225,30 +202,278 @@ header img{
     align-content: center;
     text-align: center;
     font-size: 14px;
-  }
-  .inquiry:hover{
+    padding: 2rem;
+}
+
+.inquiry:hover {
     background-color: #2f292b;
     color: white;
     transition: color 0.5s ease;
     transition: background-color 0.5s ease;
-  }
-
-  main {
-    max-width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    margin-top:2rem;
-    background-color: #FCFCFC;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 20px;
+    
+    border: #25b7d0 solid 1rem;
+    transition: border 1s ease;
+    
+   /* transition: border-radius 0.5s ease; */
 }
 
 h2 {
-    color: #333;
+    color: #555;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+iframe{
+  width: 100%;
+  height: 200px;
+}
+.banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.active_page {
+    padding: .75rem;
+    background-color: #25b6d037;
+    border-radius: .5rem;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.map-container {
+    align-items: center;
+}
+
+.rental-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rental-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.rental-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.rental-info h2 {
+    margin: 10px 0;
+}
+
+.rental-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.rental-info table, th, td {
+    border: 1px solid #ccc;
+}
+
+.rental-info th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.homecontentcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    overflow: scroll;
+    border-left: #25b7d0 solid .5rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.card {
+    margin: 0 auto;
+    width: 75%;
+}
+
+legend{
+  font-size: larger;
+  font-weight: bolder;
+  color: #1A5E63;
+}
+hr {
+    width: 100%;
+}
+
+.weather-container {
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+    align-content: center;
+}
+
+.contact {
+    max-width: 800px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #0077b5;
+}
+
+.hero button {
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Six columns side by side */
+.column {
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+.reservationgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.rentalagreement {
+    align-content: center;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.thanks {
+    text-align: center;
 }
 
 form {
@@ -282,224 +507,53 @@ button {
 button:hover {
     background-color: #555;
 }
+
 img {
-    width: 100px; /* Example width */
-    height: auto; /* Maintains aspect ratio */
-}
-.contact{
-max-width: 800px;
+    width: 100px;
+    height: auto;
 }
 
-.social-icon {
-    margin: 0 10px;
-    color: white; /* Default color */
-    text-decoration: none;
-    font-size: 24px; /* Adjust the size as needed */
-}
-
-.social-icon:hover {
-    color: #0077b5; /* Change color on hover */
-}
-
-.hero button{
-    margin: 0 auto;
-}
-
-.container {
-    position: relative;
+@media only screen and (max-width: 769px) {
+  main {
+      max-width: 95%;
   }
-  
-  /* Hide the images by default */
-  .mySlides {
+  nav h1{
     display: none;
   }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  .reservationgrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2rem;
-    gap: 2rem;
-  }
-  .rentalagreement{
-    align-content: center;
-    font-size: 20px;
-    line-height: 2rem;
-    
-
-  }
-  ul{
-    font-size: larger;
-    font-weight: bold;
-  }
-  .thanks{
-    text-align: center;
-  }
-  .inquiry{
-    height: 4rem;
-   
+  nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
   }
 
- 
-
-.hero img{
-  width: 100%;
-
-}
-
-.homecontentcontainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 350px;
-  overflow: scroll;
-  border-left: #25b7d0 solid .5rem;
-
-  
-  padding:1rem ;
-  margin: 2rem;
-}
-.card{
-  margin: 0 auto;
-  width: 75%;
-}
-hr{
-  width: 100%;
-}
-.weather-container{
-  width: 100%;
-  height: 350px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 2rem auto;
-  text-align: center;
-  align-content: center;
-}
-        h2 {
-            color: #555;
-            margin-top: 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-/* Banner styling */
-.banner {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #ffcc00; /* Choose a color that stands out */
-  color: #000;
-  padding: 10px;
-  text-align: center;
-  z-index: 1000; /* Ensure it's on top of other content */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.banner button {
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
 .active_page {
-  padding: .75rem;
+  padding: none;
   background-color: #25b6d037;
   border-radius: .5rem;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
-
-  
+  height: fit-content;
+  box-shadow:none;
 }
-.map-container{
-  align-items: center;
+
+  .imgcontainer {
+      grid-template-columns: 1fr;
+  }
+  .imgcontainer img:not(:first-child) {
+      display: none;
+  }
+  .imgcontainer img {
+      width: 50%;
+      margin: 0 auto;
+  }
+  .homecontentcontainer {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+  }
+  .hero {
+      height: 200px;
+  }
+  .reservationgrid{
+    grid-template-columns: 1fr;
+  }
+  .rentalagreement{
+    grid-row: 1/2;
+  }
 }
