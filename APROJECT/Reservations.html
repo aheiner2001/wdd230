@@ -9,10 +9,8 @@
 </head>
 <body class="background">
     <header>
-        <div class="cornertext">Based in Cozumel
-Quintana Roo
-Mexico</div>
-        <img src="images/logo.png" alt="">
+        <div class="cornertext">Based in Cozumel<br>Quintana Roo<br>Mexico</div>
+        <img src="images/logo.webp" alt="Logo">
         <div class="pinkbar"></div>
         <div class="pinkbar"></div>
 
@@ -20,107 +18,80 @@ Mexico</div>
             <h1>~Scoots~</h1>
             <a href="index.html">Home</a>
             <a href="Rentals.html">Rentals</a>
-            <a href="Reservations.html"class="active_page">Reservations</a>
-            <a href="Contact.html">Contact</a>
-        
+            <a href="Reservations.html" class="active_page">Reservations</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <!-- Your page content -->
 
-    
     <main>
-       <h1>Resvervations</h1>
-       <div class="reservationgrid">
-
-      
-       <form method="get" action="thanks.html" class="wf1">
-            <fieldset>
-                <legend>Rental Details</legend>
-                <label>Date <input type="date" name="date" required></label> 
-                <label >Period
-                    <select name="period" required>
-                        <option value="">Please Select &#9662;</option>
-                        <option value="half_day">Half Day (3 hours)</option>
-                        <option value="full_day">Full Day</option>
-                    </select>
-                </label>
-                <label >Rental Type 
-                    <select name="rental_type" required>
-                        <option value="">Please Select &#9662;</option>
-                        <option value="honda_metropolitan">Honda Metropolitan (49cc) - 1 person</option>
-                        <option value="honda_dio">Honda Dio (110cc) - 2 person</option>
-                        <option value="honda_pcx150">Honda PCX150 (149cc) - 2 person</option>
-                        <option value="honda_pioneer">Honda Pioneer 1000 - 4 person</option>
-                        <option value="jeep_wrangler_4door">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
-                        <option value="jeep_wrangler_2door">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
-                    </select>
-                </label>
-                <label>Number of Rentals <input type="number" name="number_of_rentals" min="1" required></label> 
-            </fieldset>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>Full Name* <input type="text" name="name" required></label> 
-                <label>Phone Number* <input type="tel" name="phone" placeholder="123-555-1678" required></label> 
-                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label> 
-                <label>Home State/Country <input type="text" name="home_location" required></label> 
-                <label>Cruise Line (if applicable) <input type="text" name="cruise_line"></label> 
-            </fieldset>
-            <fieldset>
-                <legend>Special Accommodations/Comments</legend>
-                <label><textarea name="comments" rows="5" placeholder="e.g., Need drop-off at a specific location"></textarea></label>
-            </fieldset>
-            <input type="submit" value="Submit Rental Request">
-        </form>
+        <h1>Reservations</h1>
+        <div class="reservationgrid">
+            <form method="get" action="thanks.html" class="wf1">
+                <fieldset>
+                    <legend>Rental Details</legend>
+                    <label>Date <input type="date" name="date" required></label> 
+                    <label>Period
+                        <select name="period" required>
+                            <option value="">Please Select &#9662;</option>
+                            <option value="half_day">Half Day (3 hours)</option>
+                            <option value="full_day">Full Day</option>
+                        </select>
+                    </label>
+                    <label>Rental Type 
+                        <select name="rental_type" required>
+                            <option value="">Please Select &#9662;</option>
+                            <option value="honda_metropolitan">Honda Metropolitan (49cc) - 1 person</option>
+                            <option value="honda_dio">Honda Dio (110cc) - 2 person</option>
+                            <option value="honda_pcx150">Honda PCX150 (149cc) - 2 person</option>
+                            <option value="honda_pioneer">Honda Pioneer 1000 - 4 person</option>
+                            <option value="jeep_wrangler_4door">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                            <option value="jeep_wrangler_2door">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
+                        </select>
+                    </label>
+                    <label>Number of Rentals <input type="number" name="number_of_rentals" min="1" required></label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name* <input type="text" name="name" required></label> 
+                    <label>Phone Number* <input type="tel" name="phone" placeholder="123-555-1678" required></label> 
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label> 
+                    <label>Home State/Country <input type="text" name="home_location" required></label> 
+                    <label>Cruise Line (if applicable) <input type="text" name="cruise_line"></label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Special Accommodations/Comments</legend>
+                    <label><textarea name="comments" rows="5" placeholder="e.g., Need drop-off at a specific location"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Submit Rental Request">
+            </form>
 
             <div class="rentalagreement">
-
-        
-
-                <ul>Rental Services and Agreements</ul>
-                        <li>A $50 security deposit is required to confirm reservations.</li>
-                        <li>A valid drivers license is required in hand at the time of rental.
-                        </li>
-                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.
-                        </li>
-                        <li>Fuel charge is not included.
-                        </li>
-                        <li>Unlimited mileage.
-                        </li>
-                        <li>Liability insurance is included.
-                        </li>
-                        <li>Damage insurance is available for purchase.
-                        </li>
-
-                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
-                        </li>
-                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
-                        </li>
-                        <li>Rentals may be returned to either physical location.
-                        </li>
+                <ul>Rental Services and Agreements
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
             </div>
         </div>
-
     </main>
 
     <!-- Include footer -->
     
     <footer>
         <p>© 2024 ~Scoots~</p>
-    
-        <a href="https://facebook.com" target="_blank" class="social-icon">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://twitter.com" target="_blank" class="social-icon">
-        <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://instagram.com" target="_blank" class="social-icon">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://linkedin.com" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
     </footer>
-    
 </body>
 </html>
