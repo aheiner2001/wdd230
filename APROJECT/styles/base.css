@@ -18,7 +18,7 @@ body {
 }
 
 .background {
-    background-image: url('/APROJECT/images/seem.png');
+    background-image: url('../images/seem.png');
     background-repeat: repeat;
     background-size: 300px 300px;
 }
@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/APROJECT/images/hero1.png');
+    background: url('../images/hero1.png');
     background-repeat: repeat;
     background-size: 400px 400px;
     opacity: 0.5;
