@@ -526,7 +526,7 @@ img {
   }
 
 .active_page {
-  padding: none;
+  padding: 0;
   background-color: #25b6d037;
   border-radius: .5rem;
   height: fit-content;
